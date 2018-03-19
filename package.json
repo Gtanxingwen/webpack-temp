@@ -16,6 +16,43 @@
   ],
   "author": "Gtanxingwen",
   "license": "MIT",
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "extends": [
+      "mysticatea",
+      "mysticatea/modules",
+      "plugin:vue/recommended"
+    ],
+    "plugins": [
+      "node"
+    ],
+    "env": {
+      "browser": false
+    },
+    "globals": {
+      "applicationCache": false,
+      "atob": false,
+      "btoa": false,
+      "console": false,
+      "document": false,
+      "location": false,
+      "window": false
+    },
+    "rules": {
+      "node/no-extraneous-import": "error",
+      "node/no-missing-import": "error",
+      "node/no-unpublished-import": "error",
+      "vue/html-indent": [
+        "error",
+        4
+      ],
+      "vue/max-attributes-per-line": "off",
+      "require-noopener": "error"
+    }
+  },
   "dependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
@@ -30,10 +67,16 @@
     "webpack": "^4.1.1"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.0",
+    "eslint-config-mysticatea": "^13.0.2",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-vue": "^4.3.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.7.2",
     "px2rem-loader": "^0.1.7",
     "uglifyjs-webpack-plugin": "^1.2.4",
+    "vue-eslint-parser": "^2.0.3",
     "vue-template-compiler": "^2.5.16",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"

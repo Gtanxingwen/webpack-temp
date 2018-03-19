@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
     <h1 :class="$style.title">
         hello webpack4.0 + Vue
     </h1>
