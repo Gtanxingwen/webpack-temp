@@ -1,0 +1,41 @@
+{
+  "name": "webpack-use-template",
+  "version": "1.0.0",
+  "description": "webpack4.0+ 常用配置",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --env.production"
+  },
+  "keywords": [
+    "webpack",
+    "webpack4.0",
+    "tempalte"
+  ],
+  "author": "Gtanxingwen",
+  "license": "MIT",
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "path": "^0.12.7",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.1",
+    "vue-router": "^3.0.1",
+    "webpack": "^4.1.1"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.7.2",
+    "px2rem-loader": "^0.1.7",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
