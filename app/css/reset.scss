@@ -18,7 +18,17 @@ center, u, b, i {
     vertical-align: baseline
 }
 body {
-    line-height: 1;
+  line-height: 1;
+  font-family: Microsoft Yahei,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  user-select: none;
+  background: #fff;
 }
 :focus {
     outline: 0
@@ -36,9 +46,10 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
     quotes: ""
 }
-input, textarea {
-    margin: 0;
-    padding: 0
+input, textarea, button {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft Yahei,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 hr {
     margin: 0;
@@ -48,3 +59,21 @@ hr {
     background-color: #000;
     height: 1px
 }
+ul, li, a, i, span, input, button{
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+a:link, a:visited, a:hover, a:active{
+  outline:none;
+  text-decoration: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input, select{
+  /*IOS端*/
+  background-color:transparent;
+  border-color:transparent;
+  /*andorid端*/
+  -webkit-appearance: none;
+}
+/*屏蔽uc广告*/
+iframe[id^="head__"] { display: none !important; }
+iframe[id^="utp__"] { display: none !important; }
